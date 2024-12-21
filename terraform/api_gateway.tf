@@ -14,7 +14,7 @@ resource "aws_apigatewayv2_vpc_link" "vpc_link" {
 resource "aws_apigatewayv2_api" "api_gateway" {
   name                         = "ambrosia-api-gateway"
   protocol_type                = "HTTP"
-  api_key_selection_expression = "$request.header.authorization"
+  api_key_selection_expression = "$request.header.x-api-key"
   route_selection_expression   = "$request.method $request.path"
 
   cors_configuration {

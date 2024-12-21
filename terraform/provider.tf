@@ -1,11 +1,9 @@
-
-
 terraform {
   cloud {
     organization = "ambrosia-serve"
 
     workspaces {
-      name = "postech-workspace"
+      name = "authenticator-workspace"
     }
   }
 
