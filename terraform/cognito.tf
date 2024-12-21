@@ -5,7 +5,7 @@ resource "aws_cognito_user_pool" "user_pool" {
     attribute_data_type = "String"
     name                = "custom:cpf"
     mutable             = false
-    required            = true
+    required            = false
   }
 }
 
